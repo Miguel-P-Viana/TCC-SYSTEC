@@ -45,20 +45,20 @@ header {
 .avatar{
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
-    height: 100%;
-    width: 15%;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 100%;
+    width: 12.5%;
+    position: relative;
 }
 
 
 
 .avatar img{
     max-height: 50%;
-    width: 30px;
+    max-width: 30px;
     filter: invert();
     transition: transform 0.3s;
-    position: absolute;
 }
 
 
@@ -72,8 +72,9 @@ justify-content: center;
 .menu-conta{
     min-height: 5em;
     background-color: rgb(76, 125, 189); 
-    position: relative;
-    margin-top: 9rem;
+    position: absolute;
+    top: 3rem;
+    right: 0.75rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -92,16 +93,14 @@ justify-content: center;
 }
 
 
-.menu-conta h4 a:hover{
 
-}
 
 
 main{
     display: flex;
     flex-direction: column;
-    height: 92vh;
-    width: 100%;
+    min-height: 92dvh;
+    min-width: 100%;
     overflow: auto;
     color: rgb(136, 38, 38);
     background: linear-gradient(180deg, #dadada 30%, #cecccc 100%); 

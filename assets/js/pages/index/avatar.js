@@ -1,12 +1,6 @@
 
-function Avatar() {
+const avatar = document.getElementById('avatar') 
 
-    const icon_avatar = document.getElementById('avatar')
+avatar.addEventListener('click', function abrirmenu(){
 
-    
-
-    const main = document.getElementsByTagName('main')[0]
-
-   main.appendChild(conta)
-    
-}
+})
