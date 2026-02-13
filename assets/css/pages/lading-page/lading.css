@@ -1,0 +1,165 @@
+@import url("header.css");
+@import url("criar-conta/login.css");
+@import url("criar-conta/criar-conta.css");
+@import url("../../global/global.css");
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 92dvh;
+    min-width: 100%;
+    overflow: auto;
+    color: #ffffff;
+    background: linear-gradient(180deg, #e9e6e6 30%, #e6e4e4 100%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*carrosel*/
+
+.carrosel{
+    align-self: center;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.carrosel-view{
+    overflow: visible;
+    margin: 0 60px;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+    
+}
+
+
+.carrosel-track{
+    display: flex;
+    gap: 7px;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+
+.carrosel-slides{
+    min-width: 100%;
+    position: relative;
+    opacity: 0.4;      
+    transition: 0.5s;  
+    transform: scale(0.9);
+}
+
+
+.carrosel-slides.active {
+    opacity: 1;
+    transform: scale(1.1); 
+    z-index: 2;
+}
+
+
+.carrosel-slides img{
+    aspect-ratio: 16 / 9; /*mantem a msm porporção a todos*/
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.legenda-slides{
+position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.btnanterior, .btnproximo {
+    position: absolute;
+    top: 50%;
+    background: linear-gradient(90deg, #00BF63 20%, #0da15a 80%);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    color: white;
+    transform: translateY(-50%);
+    
+}
+
+.btnanterior{
+    left: 1rem;
+}
+
+.btnproximo{
+    right: 1rem;
+}
+
+
+.btnanterior:hover, .btnproximo:hover{
+    background: linear-gradient(90deg, #00BF63 20%, #24b36d 80%);
+    width: 3.1rem;
+    height: 3.1rem;
+    transition: 0.1s;
+}
+
+/* main::-webkit-scrollbar{
+    display: none;
+} */

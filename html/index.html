@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se no LocaPaços!</title>
-    <link rel="stylesheet" href="../assets/css/pages/index/index.css">
+    <title>LocaPaços</title>
+    <link rel="stylesheet" href="../assets/css/pages/lading-page/lading.css">
     
+    <link rel="icon" type="image/png" sizes="16x16"  href="../assets/imgs/global/logo.png">
 </head>
 <body>
     
     <header>
         
         <div class="logo">
-            <img src="../assets/imgs/global/logo.png" alt="logo">
+            <h1><span style="color: #00BF63;">LOCA</span>PAÇOS</h1>
         </div>
 
-        <div class="avatar">
-           <div class="avataremenu">
-            <img src="../assets/imgs/global/user.png" alt="logo" id="avatar">
-           
-                 <div class="menu-conta">
-                    <h4><a href="#">Criar</a></h4>
-                     <h4><a href="#">Entrar</a></h4>
-                </div>
-            </div>
+        <div class="navbar">
+            <li class="abrir-modal">Criar conta</li>
+            <li class="abrir-modal">Login</li>
         </div>
 
     </header>
@@ -32,10 +27,111 @@
 
 
      <main>
+        
+
+        <!--       Modal - Criar conta         -->
+       
+        <section class="modal-criar-conta">
+            <section class="criar-conta">
+            <div class="partesuperior">
+                <div class="esquerda">
+                    <h1> Crie uma conta</h1>
+                </div>
+
+                <div class="direita">
+
+                </div>
+                
+            </div>
+            
+            <div class="parteinferior">
+                <div class="area-criar">
+                    <form action="criar-conta.php" method="post" id="form">
+                        <label for="">E-mail</label>
+                        <input type="text" name="" id="">
+
+                        <label for="">Senha</label>
+                        <input type="text" name="" id="">
+
+                    </form>
+                </div>
+            </div>
+            </section>
+        </section>
+
+
+
+
+
+
+        <!--       Modal - Login         -->
+       
+        <section class="modal-logar-conta">
+            <section class="criar-conta">
+            <div class="partesuperior">
+                <div class="esquerda">
+                    <h1> Fazer login</h1>
+                </div>
+
+                <div class="direita">
+
+                </div>
+                
+            </div>
+            
+            <div class="parteinferior">
+                <div class="area-criar">
+                    <form action="criar-conta.php" method="post" id="form">
+                        <label for="">E-mail</label>
+                        <input type="text" name="" id="">
+
+                        <label for="">Senha</label>
+                        <input type="text" name="" id="">
+
+                    </form>
+                </div>
+            </div>
+            </section>
+        </section>
+
+
+
+       <!--
+        <section class="carrosel">
+
+            <div class="carrosel-view">
+
+                <div class="carrosel-track">
+
+                    <article class="carrosel-slides">
+                        <img src="../assets/imgs/pages/index/quadra-1.png" alt="Quadra teste 1" loading="lazy">
+                        <div class="legenda-slides"><h2>Campo Society - Fosfertil</h2></div>
+                    </article>
+
+                    <article class="carrosel-slides">
+                        <img src="../assets/imgs/pages/index/quadra-1.png" alt="Quadra teste 1" loading="lazy">
+                        <div class="legenda-slides"><h2>Campo Society - Fosfertil</h2></div>
+                    </article>
+
+                    <article class="carrosel-slides">
+                        <img src="../assets/imgs/pages/index/quada2.webp" alt="Quadra teste 2" loading="lazy">
+                        <div class="legenda-slides"><h2>Campo Society - Xplay</h2></div>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <button class="btnanterior"><</button>
+            <button class="btnproximo">></button>
+
+        </section>
+    -->
+
      </main>
      
      
-     <script src="../assets/js/pages/index/avatar.js">
+     <script src="../assets/js/pages/lading/modal-criar.js">
      </script>
 </body>
 </html>
