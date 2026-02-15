@@ -5,10 +5,8 @@
 
 
 main{
-    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 92dvh;
     min-width: 100%;
     overflow: auto;
@@ -20,8 +18,6 @@ main{
 main::-webkit-scrollbar {
   display: none;
 }
-
-
 
 
 

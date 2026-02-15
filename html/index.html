@@ -28,7 +28,14 @@
 
      <main>
         
-        
+      
+       
+
+     </main>
+     
+     
+     
+             
         <!--       Modal - Criar conta         -->
        
         
@@ -50,10 +57,10 @@
                         
                         
                         <label for="">E-mail</label>
-                        <input type="text" name="email_criar" id="">
+                        <input type="email" name="email_criar" id="">
 
                         <label for="">Senha</label>
-                        <input type="text" name="senha_criar" id="">
+                        <input type="password" name="senha_criar" id="">
 
                     </form>
                 </div>
@@ -84,31 +91,41 @@
                 <div class="area-logar">
                     <form action="ladingpage.php" method="post" id="form">
                         
-                            <div class="email">
-                        <label for="">E-mail</label>
-                        <input type="text" name="email_logar" id="">
+                            <div class="formdivs">
+                        <label for="email_logar">E-mail</label>
+                        <input type="email" name="email_logar" id="" required>
                             </div>
 
-                            <div class="senha">
-                        <label for="">Senha</label>
-                        <input type="text" name="senha_logar" id="">
+                            <div class="formdivs">
+                        <label for="senha_logar">Senha</label>
+                        <input type="password" name="senha_logar" id="" required>
                             </div>
 
+                            <div class="mostrar-senha">
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <input type="checkbox" name="mostrarsenha" id="mostrarsenha">
+                                    <h6 style="letter-spacing: 0.5px;">Mostrar senha</h6>
+                                </div> 
+                                    <h5>Esqueceu sua senha?</h5>
+                            </div>
 
+                            <div class="botoes">
+                                <input type="submit" value="ENTRAR">
+                            </div>
 
                     </form>
                 </div>
             </div>
         </dialog>
-        
 
 
-       
 
-     </main>
-     
-     
-     
+
+
+
+                <!--       Modal - Alterar senha         -->
+
+
 
 
      <script src="../assets/js/pages/lading/modal-criar.js">

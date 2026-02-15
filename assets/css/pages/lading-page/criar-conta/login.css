@@ -1,7 +1,8 @@
-
+/* background: url(../../../../imgs/pages/foto\ bola\ teste.webp);
+    background-size: cover; */
 
 .logar-conta{
-    width: 60%;
+    width: 40%;
     max-width: 650px;
     height: 500px;
     background: linear-gradient(90deg, #2F3864 20%, #384069 80%);
@@ -82,9 +83,9 @@
 
 
 .area-logar{
-    /* background-color: aqua; */
-    height: 90%;
+    height: 85%;
     width: 90%;
+    
 }
 
 
@@ -92,5 +93,87 @@
 #form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
+}
+
+
+
+.formdivs{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formdivs label{
+    font-size: 1.7em;
+    margin-left: 4%;
+}
+
+
+.formdivs input{
+    border-radius: 10px;
+    width: 75%;
+    padding: 12px;
+    box-shadow: 10px 10px 10px rgba(58, 57, 57, 0.3);
+    transition: transform 0.1s ease-in-out;
+    opacity: 90%;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+
+.formdivs input:hover{
+    transform: scale(1.03);
+}
+
+
+.formdivs input:focus{
+    transform: scale(1.03);
+    outline: 1px solid #00BF63;
+}
+
+
+
+.mostrar-senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mostrar-senha h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.01);
+}
+
+
+
+.botoes{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.botoes input{
+    width: 90%;
+    height: 60px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    background: linear-gradient(90deg, #00BF63 10%, #04a557 90%) ;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.botoes input:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }

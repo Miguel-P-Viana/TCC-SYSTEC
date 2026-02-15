@@ -4,6 +4,7 @@ const modalcriar = document.querySelector('.criar-conta')
 const modallog = document.querySelector('.logar-conta')
 const x = document.querySelectorAll('.x')
 
+modallog.showModal()
 
 abrirmodalcriar.onclick = () => {
     
