@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("criar-conta/login.css");
 @import url("criar-conta/criar-conta.css");
+@import url("criar-conta/esqueci-senha.css");
 @import url("../../global/global.css");
 
 
@@ -10,8 +11,10 @@ main{
     height: 92dvh;
     min-width: 100%;
     overflow: auto;
+    overflow-x: hidden;
     color: #ffffff;
-    background: linear-gradient(180deg, #e9e6e6 30%, #e6e4e4 100%); 
+    /* background: linear-gradient(180deg, #e9e6e6 30%, #e6e4e4 100%);  */
+    background: linear-gradient(90deg, #2F3864 20%, #384069 80%);
 }
 
 
@@ -20,6 +23,115 @@ main::-webkit-scrollbar {
 }
 
 
+/*   SECTION 1   */
+
+.apresentação {
+    /* background-image: url("../../../imgs/global/bola.png");
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;  */
+    background: black;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.apresentação h1, h4{
+    text-align: center;
+}
+
+
+.apresentação h1{
+    margin-bottom: 2%;
+}
+
+
+.apresentação button{
+    background: linear-gradient(90deg, #2F3864, #384069);
+    margin-top: 6%;
+    padding: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.2s ease-in-out;
+    color: #ffffff;
+}
+
+#online{
+    background: linear-gradient(90deg, #2F3864, #384069);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#txtbotao, #simples{
+    background: linear-gradient(90deg, #00BF63, #04a557);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.apresentação button:hover{
+    transform: scale(1.06);
+    background: linear-gradient(90deg, #2f365f, #363e66);
+    cursor: pointer;
+}
+
+
+/*   SECTION 2   */
+
+.problemas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 700px;
+}
+
+
+.ladoesquerdo, .ladodireito{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+
+.ladoesquerdo{
+    gap: 50px;
+    align-items: center;
+}
+
+
+.ladoesquerdo h1{
+    background: linear-gradient(90deg, #00BF63, #04a557);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.ladoesquerdo h4{
+    text-align: justify;
+}
+
+
+.ladodireito{
+    /* background-color: #0da15a; */
+    align-items: flex-end;
+    gap: 30px;
+}
+
+
+
+.problemas-divs{
+    background-color: #04a557;
+    width: 90%;
+    height: 120px;
+}
 
 
 
@@ -35,20 +147,11 @@ main::-webkit-scrollbar {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.teste{
+    width: 100%;
+    min-height: 10%;
+    background-color: #24b36d;
+}
 
 
 

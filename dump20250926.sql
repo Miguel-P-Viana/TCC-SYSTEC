@@ -116,7 +116,6 @@ CREATE TABLE `tb_cliente` (
   `id_cliente` int(11) NOT NULL AUTO_INCREMENT,
   `cd_cpf` varchar(15) NOT NULL,
   `nm_cliente` varchar(50) NOT NULL,
-  `nm_sexo` varchar(15) DEFAULT NULL,
   `dt_nascimento` date NOT NULL,
   `cd_telefone` varchar(15) NOT NULL,
   `nm_estado` varchar(45) NOT NULL,

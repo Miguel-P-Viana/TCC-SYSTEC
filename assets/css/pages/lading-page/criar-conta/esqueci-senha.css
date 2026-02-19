@@ -1,7 +1,7 @@
 /* background: url(../../../../imgs/pages/foto\ bola\ teste.webp);
     background-size: cover; */
 
-.logar-conta{
+.esqueci-senha{
     width: 40%;
     max-width: 650px;
     height: 500px;
@@ -14,14 +14,14 @@
 }
 
 /* .logar-conta[open] - usando o dialog no html, vc pode usar essa propriedade para aplicar comandos apenas quando o modal estiver abertp*/
-.logar-conta[open]{
+.esqueci-senha[open]{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.logar-conta::backdrop {
+.esqueci-senha::backdrop {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
 }
@@ -35,18 +35,20 @@
 }
 
 
-.esquerdalog{
+.esquerdaesqueci{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
     height: 50px;
     border-radius: 1px 1px 10px 0;
-    font-size: 0.7em;
+    font-size: 0.6em;
     text-align: center;
     background: linear-gradient(90deg, #e2dfdf 10%, #e9e6e6 90%); 
     color: #00BF63;
+    
 }
+
 
 
 .direita{
@@ -82,7 +84,7 @@
 }
 
 
-.area-logar{
+.area-logar-esqueci{
     height: 85%;
     width: 90%;
     
@@ -90,7 +92,7 @@
 
 
 
-#formslogar{
+#formsesqueci{
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -134,23 +136,9 @@
 
 
 
-.mostrar-senha {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.mostrar-senha input, h5:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    transform: scale(1.01);
-}
-
-
-
-.botoes{
+.botoes-esqueci{
     width: 100%;
-    height: 110px;
+    height: 150px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -158,7 +146,7 @@
 
 
 
-.botoes input{
+.botoes-esqueci input{
     width: 90%;
     height: 60px;
     border-radius: 3px;
@@ -173,7 +161,7 @@
 
 
 
-.botoes input:hover{
+.botoes-esqueci input:hover{
     transform: scale(1.03);
     cursor: pointer;
 }

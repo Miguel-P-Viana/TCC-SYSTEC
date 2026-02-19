@@ -22,8 +22,8 @@
 }
 
 .criar-conta::backdrop {
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
 }
 
 .partesuperior {
@@ -33,14 +33,46 @@
 }
 
 
-.esquerda{
+.meio{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+}
+
+
+.bolinha{
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+
+.bolinha-principal{
+    background: linear-gradient(90deg, #00BF63 10%, #04a557 90%) ;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+
+.linha{
+    background-color: #ffffff;
+    width: 10px;
+    height: 5px;
+}
+
+
+
+.esquerdacrie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41%;
     height: 50px;
     border-radius: 1px 1px 10px 0;
-    font-size: 0.7em;
+    font-size: 0.6em;
     text-align: center;
     background: linear-gradient(90deg, #e2dfdf 10%, #e9e6e6 90%); 
     color: #00BF63;
@@ -72,18 +104,219 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    overflow: auto;
+}
+
+.parteinferior::-webkit-scrollbar {
+  display: none;
 }
 
 
+
 .area-criar{
-    height: 90%;
+    height: 85%;
     width: 90%;
 }
 
 
+.forms{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 
-#form{
+}
+
+.multi-forms{
+    display: flex;
+    width: 300%; /* por serem 3 etapas*/
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* classes que serão controlá-das pelo js*/
+
+.etapa1 .etapa{
+    transform: translateX(0);
+}
+
+.etapa2 .etapa{
+    transform: translateY(-100%);
+}
+
+.etapa3 .etapa{
+    transform: translateY(-201%);
+}
+
+
+
+.etapa{
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    padding: 5px 5px;
+}
+
+
+
+
+.formdivscriar{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.formdivscriar_cpf{
+    display: flex;
+    flex-direction: row;
+    
+    box-sizing: border-box;
+}
+
+
+.formdivscriar_cpf label{
+    font-size: 1.3em;
+    margin-left: 4%;
+}
+
+
+.formdivscriar_cpf input{
+    border-radius: 10px;
+    width: 85%;
+    padding: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease-in-out;
+    opacity: 90%;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+
+.formdivscriar_cpf input:hover{
+    transform: scale(1.03);
+}
+
+.formdivscriar_cpf input:focus{
+    transform: scale(1.02);
+    outline: 1px solid #00BF63;
+
+}
+
+
+.formdivscriar label{
+    font-size: 1.3em;
+    margin-left: 4%;
+}
+
+
+.formdivscriar input, #select{
+    border-radius: 10px;
+    width: 85%;
+    padding: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease-in-out;
+    opacity: 90%;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+
+.formdivscriar input:hover, #select:hover{
+    transform: scale(1.02);
+}
+
+
+.formdivscriar input:focus{
+    transform: scale(1.02);
+    outline: 1px solid #00BF63;
+}
+
+#select:focus{
+    transform: scale(1.02);
+    outline: 1px solid #00BF63;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+.botao {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px
+}
+
+
+.btnprox, .btnvoltar{
+    width: 20%;
+    height: 45%;
+    margin-right: 1%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+
+
+.btnprox{
+    background: linear-gradient(90deg, #00BF63 10%, #04a557 90%) ;
+}
+
+.btnvoltar{
+        background: linear-gradient(90deg, #2F3864 20%, #384069 80%);
+
+}
+
+#btncad{
+    width: 35%;
+    height: 45%;
+    margin-right: 1%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+    background: linear-gradient(90deg, #00BF63 10%, #04a557 90%) ;
+
+}
+
+
+#btncad:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.botao button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1300px) {
+    .formdivscriar_cpf #telefone{
+       margin-left: 10%;
+    }
+    #labeltel{
+        margin-left: 12%;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .formdivscriar_cpf #tel{
+       margin-left: 15%;
+    }
+
+    .formdivscriar_cpf #tel label{
+       margin-left: 18%;
+    }
 }

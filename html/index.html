@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocaPaços</title>
+    <title>LOCAPAÇOS</title>
     <link rel="stylesheet" href="../assets/css/pages/lading-page/lading.css">
-    
+    <link rel="shortcut icon" href="../assets/imgs/global/LOGO.png" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="16x16"  href="../assets/imgs/global/logo.png">
 </head>
 <body>
@@ -13,7 +13,9 @@
     <header>
         
         <div class="logo">
-            <h1><span style="color: #00BF63;">LOCA</span>PAÇOS</h1>
+            <h1><span style="background: linear-gradient(90deg, #00BF63, #04a557);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;">LOCA</span>PAÇOS</h1>
         </div>
 
         <div class="navbar">
@@ -25,24 +27,76 @@
 
 
 
-
      <main>
         
+      <section class="apresentação">
+    
+        <h1>Reserve espaços esportivos de forma <br><span style="font-size: 2.2em ;"><span id="simples">
+            SIMPLES,</span> RÁPIDA <span style="font-size: 0.6em;">e</span> <span id="online">ONLINE.</span></span></h1>
+    
+            <h4>Uma plataforma digital que conecta atletas a espaços esportivos, <br>facilitando o acesso aos amantes de esportes da região! </h4>
       
+            <button type="button" id="botao-apresentacao">
+                <span id="txtbotao">CONHEÇA O PROJETO</span>
+            </button>
+    </section>
        
+    <section class="problemas">
+        <div class="ladoesquerdo">
+        <h1>OS PROBLEMAS ENCONTRADOS NO <br> MODELO ATUAL</h1>
+        <H4>Muitas instituições ainda utilizam de métodos pouco efetivos e desorganizados 
+             para gerenciar seus espaços. Mensagens por redes sociais ou e-mails que diversas vezes acabam se perdendo, desperdiçando oportunidades de negócio.</H4>
+        </div>
 
+        <div class="ladodireito">
+            <div class="problemas-divs">
+
+            </div>
+
+            <div class="problemas-divs">
+
+            </div>
+
+            <div class="problemas-divs">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="teste">
+
+
+    </section>
+    
      </main>
      
      
-     
+     <!-- Depois, na hora de passar pra arquivo php, 
+      usar require e include para criar componentes parecidos 
+      com o react e diminuir o codigo-->
              
+
+
         <!--       Modal - Criar conta         -->
        
         
             <dialog class="criar-conta">
             <div class="partesuperior">
-                <div class="esquerda">
+                <div class="esquerdacrie">
                     <h1> Crie uma conta</h1>
+                </div>
+
+                <div class="meio">
+                    <div class="bolinha-principal"></div>
+
+                    <div class="linha"></div>
+
+                    <div class="bolinha"></div>
+
+                    <div class="linha"></div>
+
+                    <div class="bolinha"></div>
                 </div>
 
                 <div class="direita">
@@ -53,15 +107,133 @@
             
             <div class="parteinferior">
                 <div class="area-criar">
-                    <form action="ladingpage.php" method="post" id="form">
+                    <form action="ladingpage.php" method="post" id="form" class="forms" name="formjs">
                         
+                        <section class="multi-etapas">
                         
-                        <label for="">E-mail</label>
-                        <input type="email" name="email_criar" id="">
+                            <section class="etapa etapa1">
+                            
+                            <div class="formdivscriar">
+                                <label for="nomecomp">Nome Completo</label>
+                                <input type="text" name="nomecomp" required>
+                            </div>
 
-                        <label for="">Senha</label>
-                        <input type="password" name="senha_criar" id="">
+                            <div class="formdivscriar">
+                                <label for="nascimento">Data de Nascimento</label>
+                                <input type="date" name="nascimento" required>
+                            </div>
 
+                            <div class="formdivscriar_cpf">
+                                <div style="display: flex; flex-direction: column;">
+                                <label for="cpf">CPF</label>
+                                <input type="text" id="cpf" name="cpf" required>
+                                    </div>
+
+                                    <div id="tel" style="display: flex; flex-direction: column;">
+                                <label for="tel" id="labeltel">Telefone</label>
+                                <input type="tel" name="tel" id="telefone" required>
+                                    </div>
+                            </div>
+
+                            
+
+                        
+                            
+                            <div class="botao">
+                                <button type="button" class="btnprox" >
+                                    PRÓXIMO
+                                </button>
+                            </div>
+
+                        </section>
+                        
+
+                        <section class="etapa etapa2">
+                            <div class="formdivscriar">
+                                <label for="estado">Estado</label>
+                                <select name="estado" id="select">
+                                    
+                                    <option value=""></option>
+
+                                                    <option value="Acre">Acre</option>
+                                                    <option value="Alagoas">Alagoas</option>
+                                                    <option value="Amapa">Amapá</option>
+                                                    <option value="Amazonas">Amazonas</option>
+                                                    <option value="Bahia">Bahia</option>
+                                                    <option value="Ceara">Ceará</option>
+                                                    <option value="DistritoFederal">Distrito Federal</option>
+                                                    <option value="EspiritoSanto">Espírito Santo</option>
+                                                    <option value="Goias">Goiás</option>
+                                                    <option value="Maranhao">Maranhão</option>
+                                                    <option value="MatoGrosso">Mato Grosso</option>
+                                                    <option value="MatoGrossoDoSul">Mato Grosso do Sul</option>
+                                                    <option value="MinasGerais">Minas Gerais</option>
+                                                    <option value="Para">Pará</option>
+                                                    <option value="Paraiba">Paraíba</option>
+                                                    <option value="Parana">Paraná</option>
+                                                    <option value="Pernambuco">Pernambuco</option>
+                                                    <option value="Piaui">Piauí</option>
+                                                    <option value="RioDeJaneiro">Rio de Janeiro</option>
+                                                    <option value="RioGrandeDoNorte">Rio Grande do Norte</option>
+                                                    <option value="RioGrandeDoSul">Rio Grande do Sul</option>
+                                                    <option value="Rondonia">Rondônia</option>
+                                                    <option value="Roraima">Roraima</option>
+                                                    <option value="SantaCatarina">Santa Catarina</option>
+                                                    <option value="SaoPaulo">São Paulo</option>
+                                                    <option value="Sergipe">Sergipe</option>
+                                                    <option value="Tocantins">Tocantins</option>
+                                </select>
+                            </div>
+
+                            <div class="formdivscriar">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" required>
+                            </div>
+
+                            <div class="formdivscriar">
+                                <label for="CEP">CEP</label>
+                                <input type="number" name="CEP" required>
+                            </div>
+                            
+                            <div class="botao">
+                                 <button type="button" class="btnvoltar">
+                                    VOLTAR
+                                </button>
+                                <button type="button" class="btnprox">
+                                    PRÓXIMO
+                                </button>
+                                </div>
+                        </section>
+
+
+                        <section class="etapa etapa3">
+                            <div class="formdivscriar">
+                                <label for="nomeuser">Nome de Usuário</label>
+                                <input type="text" name="nomeuser" required>
+                            </div>
+
+                            <div class="formdivscriar">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" required>
+                            </div>
+
+                            <div class="formdivscriar">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="password" required> 
+                            </div>
+                            
+                            <div class="botao">
+                                 <button type="button" class="btnvoltar">
+                                    VOLTAR
+                                </button>
+                                <input type="submit" value="CADASTRAR" id="btncad" name="btncad">
+                                    
+                                </button>
+                                </div>
+                        </section>
+
+
+                        </secion>
                     </form>
                 </div>
             </div>
@@ -77,7 +249,7 @@
        
         <dialog class="logar-conta">
             <div class="partesuperior">
-                <div class="esquerda">
+                <div class="esquerdalog">
                     <h1> Faça login</h1>
                 </div>
 
@@ -89,7 +261,7 @@
             
             <div class="parteinferior">
                 <div class="area-logar">
-                    <form action="ladingpage.php" method="post" id="form">
+                    <form action="ladingpage.php" method="post" id="formslogar" name="formjs">
                         
                             <div class="formdivs">
                         <label for="email_logar">E-mail</label>
@@ -98,7 +270,7 @@
 
                             <div class="formdivs">
                         <label for="senha_logar">Senha</label>
-                        <input type="password" name="senha_logar" id="" required>
+                        <input type="password" name="senha_logar" id="senha_logar" required>
                             </div>
 
                             <div class="mostrar-senha">
@@ -106,7 +278,7 @@
                                     <input type="checkbox" name="mostrarsenha" id="mostrarsenha">
                                     <h6 style="letter-spacing: 0.5px;">Mostrar senha</h6>
                                 </div> 
-                                    <h5>Esqueceu sua senha?</h5>
+                                    <h5 id="esqueciminhasenha">Esqueceu sua senha?</h5>
                             </div>
 
                             <div class="botoes">
@@ -125,10 +297,45 @@
 
                 <!--       Modal - Alterar senha         -->
 
+<dialog class="esqueci-senha">
+            <div class="partesuperior">
+                <div class="esquerdaesqueci">
+                    <h1>Envie um e-mail</h1>
+                </div>
+
+                <div class="direita">
+                     <button type="button" class="x"><strong>X</strong></button>
+                </div>
+                
+            </div>
+            
+            <div class="parteinferior">
+                <div class="area-logar-esqueci">
+                    <form action="ladingpage.php" method="post" id="formsesqueci" name="formjs">
+                        
+                          
+                        <h3>Enviaremos um e-mail de código para redefinição de senha!</h3>
+                        
+                        <div class="formdivs">
+                        <label for="email_logar">E-mail</label>
+                        <input type="email" name="email_logar" id="" required>
+                            </div>
+                            <div class="botoes-esqueci">
+                                <input type="submit" value="ENVIAR">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </dialog>
 
 
-
-     <script src="../assets/js/pages/lading/modal-criar.js">
+     <script type="module" src="../assets/js/pages/lading/modal-criar.js">
+     </script>
+     <script src="../assets/js/pages/lading/mostrarsenha.js">
+     </script>
+     <script type="module" src="../assets/js/pages/lading/passarsection.js">
+     </script>
+     <script type="module" src="../assets/js/pages/lading/telcpfcriar.js">
      </script>
 </body>
 </html>
