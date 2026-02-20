@@ -68,14 +68,14 @@ h4 {
     color: #ffffff;
 }
 
-#online {
+#simples {
     background: linear-gradient(90deg, #333b61, #384069);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #txtbotao,
-#simples {
+#online {
     background: linear-gradient(90deg, #00BF63, #04a557);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -299,10 +299,11 @@ h4 {
     width: 95%;
     height: 95%;
     box-shadow: 4px 4px 10px rgba(0.1, 0.1, 0.1, 0.5);
-    background: url("../../../imgs/pages/ladingpage/LOCAPAÇOS.jpg.jpeg");
-    background-position: center;
-    background-size: contain;
+    background: url("../../../imgs/pages/ladingpage/solucao.png");
+    background-position: center ;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 
@@ -318,7 +319,7 @@ h4 {
 
 
 .modalsolucao:hover{
-    transform: scale(1.1);
+    transform: scale(1.06);
     background: linear-gradient(90deg, #0ac96d, #04a557);
 }
 
